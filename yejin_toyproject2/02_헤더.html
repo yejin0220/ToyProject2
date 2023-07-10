@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>헤더</title>
+    <style>
+  
+        .header{
+            width: 100%;
+            height: 80px;
+            border: 1px solid black;
+        }
+
+
+         #navi{
+            margin: 0;
+            list-style: none;
+            padding: 0;
+        }
+
+        #navi>li{
+            float: left;
+            text-align: center;
+            margin-left: 20px;
+        }
+        a{  
+            font-size: 17px;
+            text-decoration: none;
+            color: gray;
+        }
+       #navi>li>ul>li{
+            text-align: start;
+            list-style: none;
+            font-size: 17px;
+        }
+        #navi>li>ul>li :hover{
+           color: purple;
+        }
+        #navi>li>a:hover+ul{
+            display: block;
+        }
+        #navi>li>ul:hover{
+            display: block;
+        }
+        #content_menu{
+            width: 240px;
+            height: 250.19px;
+            border-radius: 20px;
+            background: navy;
+            display: none;
+            padding: 0;
+        }
+        #content_menu>li>a>span{vertical-align: top;}
+        #content_menu li{padding: 14px 20px;}
+        
+        #guide_menu{
+            width: 240px;
+            height: 192.64px;
+            border-radius: 20px;
+            background: navy;
+            display: none;
+            padding: 0;
+        }
+        
+        #guide_menu>li>a>span{vertical-align: top;}
+        #guide_menu li{padding: 14px 20px;}
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div id="header_1">
+            
+        </div>
+
+        <div id="navigator">
+            <ul id="navi">
+                <li ><a href="" id="header_content">콘텐츠</a>
+                    <ul id="content_menu">
+                        <li><a href=""><img src="https://studio.zepeto.me/img/gnb_product_icon_item.svg" style="margin-right: 15px;"><span>아이템</span></a></li>
+                        <li><a href=""><img src="https://studio.zepeto.me/img/gnb_product_icon_world.svg" style="margin-right: 15px;"><span>월드</span></a></li>
+                        <li><a href=""><img src="https://studio.zepeto.me/img/gnb_product_icon_live.svg" style="margin-right: 15px;"><span>라이브</span></a></li>
+                        <li><a href=""><img src="https://studio.zepeto.me/img/gnb_product_icon_build.svg" style="margin-right: 15px;"><span>빌드잇</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="">크리에이터 프로그램</a></li>
+                <li><a href="">비즈니스</a></li>
+                <li><a href="">가이드</a>
+                    <ul id="guide_menu">
+                        <li><a href=""><img src="https://studio.zepeto.me/img/gnb_guide_icon_guide.svg" style="margin-right: 15px;"><span>아이템 가이드</span><img src="https://studio.zepeto.me/img/icon_new_bubble.svg" style="margin: 0px 0px 2px 20px"></a></li>
+                        <li><a href=""><img src="https://studio.zepeto.me/img/gnb_guide_icon_guide.svg" style="margin-right: 15px;"><span>월드 가이드</span><img src="https://studio.zepeto.me/img/icon_new_bubble.svg" style="margin: 0px 0px 2px 20px"></a></li>
+                        <li><a href=""><img src="https://studio.zepeto.me/img/gnb_guide_icon_learn.svg" style="margin-right: 15px;"><span>학습</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="">지원</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <!-- <script>
+        $(function(){
+            $("#content_menu").click(function(){
+                let $d = $(this).children("ul");
+
+                if($d.css("display")=="none"){
+                    $d.slideDown(1000);
+                }
+            })
+        })
+    </script> -->
+
+</body>
+</html>
